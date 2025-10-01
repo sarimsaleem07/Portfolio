@@ -1,0 +1,101 @@
+.profile-main {
+    /* margin-top: 24px; */
+}
+
+.profile-container {
+    background: black;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.profile-container-image {
+    background-color: #0E1018;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-container-image img{
+    width: 261px;
+}
+
+.profile-container-text-parent{
+    margin-block: 24px;
+
+}
+
+.anchor-book{
+    text-decoration: none;
+}
+
+.profile-container-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.333em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.profile-container-text p {
+    margin: 10px 0 10px;
+    color: rgba(240, 242, 245, 0.7);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.profile-container-button {
+    gap: 10px;
+    display: flex;
+}
+
+.profile-container-button button {
+    border-radius: 8px;
+    border: none;
+    padding: 16px 37px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    font-family: "Bricolage Grotesque";
+    margin-top: 15px;
+}
+
+.profile-container-button .book {
+    color: white;
+    background-color: #4770FF;
+}
+
+.profile-container-button .copy {
+    color: rgba(240, 242, 245, 0.7);
+    background: transparent;
+    border: 1px solid #1A1F2C;
+}
+
+.profile-container-button-svg{
+    font-size: 20px;
+}
+
+
+.profile-container-icons{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.profile-container-icon{
+    padding: 8px 13px;
+    border-radius: 8px;
+    background-color: #0E1018;
+    cursor: pointer;
+}
+
+.profile-container-icon-svg{
+    font-size: 24px;
+    color: #64748B;
+}

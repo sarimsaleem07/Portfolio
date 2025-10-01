@@ -1,0 +1,6 @@
+.contact-map-area{
+        aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 56px;
+}

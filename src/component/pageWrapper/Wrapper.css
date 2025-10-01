@@ -1,0 +1,25 @@
+.page-right {
+  max-height: 100vh;
+  overflow-y: auto;
+  margin-top: 24px;
+  transition: margin-top 0.2s ease;
+}
+
+.page-right.no-margin-top {
+  margin-top: 0;
+}
+
+.page-left {
+  margin-top: 24px;
+}
+
+.page-right::-webkit-scrollbar {
+  width: 0px;
+}
+
+.page-right::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+

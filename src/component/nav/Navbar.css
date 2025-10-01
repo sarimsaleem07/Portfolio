@@ -1,0 +1,114 @@
+.navbar {
+    padding: 0;
+}
+
+.navbar-sub-parent {
+    padding: 10px 10px 10px 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: rgba(26, 31, 44, 0.25) 0px 1px 2px 0px;
+}
+
+.navbar-logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.navbar-list-items-parent {
+    display: flex;
+}
+
+.navbar-list-items {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    gap: 10px;
+}
+
+.navbar-list-item {
+    list-style: none;
+    padding: 0 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #576076;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    align-items: center;
+    padding: 10px 12px !important;
+    border-radius: 8px;
+    display: flex;
+}
+
+.navbar-list-item.active,
+.navbar-list-item:hover,
+.navbar-list-item:active,
+.navbar-list-item:focus {
+    background: #0E1018;
+    color: white;
+}
+
+.navbar-list-item.active .nav-svg,
+.navbar-list-item:hover .nav-svg {
+    color: white;
+}
+
+.navbar-list-item.active span,
+.navbar-list-item:hover span {
+    color: white;
+}
+
+.nav-svg {
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.navbar-list-item span {
+    font-size: 17px;
+}
+
+
+
+
+.nav-btns {}
+
+.nav-theme-btn {
+    text-decoration: none;
+}
+
+.nav-theme-btn .theme-svg {
+    color: #fcba03;
+    font-size: 27px;
+    cursor: grabbing;
+}
+
+
+.nav-contact-btn {}
+
+
+.nav-contact-btn button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    background: #0E1018;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-contact-btn button:hover {
+    background: #4770ff;
+}
+
+.contact-svg {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}

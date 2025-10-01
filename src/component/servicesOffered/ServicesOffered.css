@@ -1,0 +1,130 @@
+.services-offered-main {
+    margin-top: 24px;
+}
+
+.services-offered-container {}
+
+.services-offered-item-box {
+    padding: 24px;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.services-offered-card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-offered-card-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.333em;
+    color: white;
+    margin-bottom: 0;
+}
+
+.services-offered-card-title a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4770FF;
+    line-height: 1.5em;
+    border-bottom: 1px solid #DBDFE5;
+    text-decoration: none;
+}
+
+.services-offered-items {
+    margin-top: 24px;
+    display: flex;
+}
+
+.services-offered-item {
+    padding: 16px 16px 24px 16px;
+    border-radius: 16px;
+    background-color: #0E1018;
+}
+
+.services-offered-image {
+    border-radius: 8px;
+    padding: 25px 14px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.services-offered-image img {
+    vertical-align: middle;
+    height: 64px;
+}
+
+.services-offered-text {}
+
+.services-offered-text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.5em;
+    margin-top: 16px;
+    text-align: center;
+    margin: 16px 0 0;
+}
+
+
+.services-offered-card-title2 {}
+
+.services-offered-card-title2 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.54em;
+    display: block;
+    color: white;
+    margin-bottom: 22px;
+}
+
+
+.services-offered-card-title2 p {
+    margin-bottom: 0px;
+}
+
+.scrolling-info {
+    border-radius: 8px;
+    height: 56px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0E1018;
+    white-space: nowrap;
+    color: white;
+}
+
+.slider-item {
+    animation: scroll 5s linear infinite;
+}
+
+.slider-item p {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #576076;
+    animation: marquee 10s linear infinite;
+    margin-right: 10px;
+}
+
+.services-offered-card-title2 a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4770FF;
+    line-height: 1.5em;
+    border-bottom: 1px solid #DBDFE5;
+    text-decoration: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

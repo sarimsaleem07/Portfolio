@@ -1,0 +1,58 @@
+.work-together {
+    border-radius: 8px;
+    padding: 24px 0;
+    overflow: hidden;
+    margin-top: 50px;
+    background-color: #0E1018;
+    position: relative;
+}
+
+.work-together-container {
+    display: flex;
+    width: 200%; 
+    animation: scroll 20s linear infinite;
+}
+
+.work-together-item {
+    display: flex;
+    white-space: nowrap;
+    gap: 48px;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.work-together-item a {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 500;
+    color: #576076;
+    text-decoration: none;
+    line-height: 1;
+    position: relative;
+    margin: 0 15px;
+}
+
+.work-together-item a:before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #576076;
+    border-radius: 50%;
+    content: "";
+    top: 50%;
+    left: -32px;
+    transform: translateY(-50%);
+}
+
+.work-together-item a:hover {
+    color: white;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

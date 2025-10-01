@@ -1,0 +1,123 @@
+.faq-container {
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-container[open] {
+  border: 1px solid #0E1018;
+}
+
+.faqs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.faq-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #f0f2f5;
+  margin-bottom: 0;
+}
+
+.faqs-item {
+  border-radius: 4px;
+  background-color: #0E1018;
+  transition: all 0.3s ease-in-out;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.faqs-title {
+  --width: 20px;
+  --height: 3px;
+  --radius: 1px;
+  --color: rgba(240, 242, 245, 0.7);
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  font-size: 24px;
+  color: rgba(240, 242, 245, 0.7);
+  padding-right: 30px; /* Space for the icon */
+}
+
+.faqs-item:hover .faqs-title {
+  color: #fff;
+}
+
+.faqs-title::before,
+.faqs-title::after {
+  content: '';
+  display: block;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--color);
+  position: absolute;
+  border-radius: var(--radius);
+  top: calc(50% - (var(--height) / 2));
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.faqs-title::after {
+  transform: rotate(90deg);
+}
+
+.faqs-item[open] {
+  background-color: transparent;
+  border: 1px solid #0E1018;
+}
+
+.faqs-item[open] .faqs-title {
+  color: #4770ff;
+  margin-bottom: 10px;
+}
+
+.faqs-item[open] .faqs-title::before {
+  transform: rotate(45deg);
+}
+
+.faqs-item[open] .faqs-title::after {
+  transform: rotate(135deg);
+}
+
+.faqs-summary {
+  list-style: none;
+  outline: none;
+}
+
+.faqs-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqs-summary:focus {
+  outline: none;
+}
+
+.faqs-description {
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+}
+
+.faqs-item[open] .faqs-description {
+  max-height: 300px; /* Adjust based on your content */
+  opacity: 1;
+}
+
+.faqs-description-inner {
+  color: #f0f2f5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding-top: 14px;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.faqs-item[open] .faqs-description-inner {
+  transform: translateY(0);
+}

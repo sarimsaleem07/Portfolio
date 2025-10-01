@@ -1,0 +1,128 @@
+.about {
+    /* margin-top: 24px; */
+}
+
+.page-right-container {
+    background: #000;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.about-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.about-heading h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.about-heading .highlight {
+    color: #3b82f6;
+}
+
+.hire-button {
+    background-color: #0E1018;
+    border: none;
+    color: #3b82f6;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque";
+}
+
+.hire-button .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+}
+
+.about-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-data-para {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(240, 242, 245, 0.7);
+    line-height: 1.333em;
+    width: 70%;
+    margin-bottom: 48px;
+}
+
+.highlight {
+    color: white;
+}
+
+.about-experience-container {
+    display: flex;
+    gap: 40px;
+}
+
+.about-experience-data h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.about-experience-data p {
+    margin: 5px 0 0;
+    color: #576076;
+}
+
+.circle-area {
+    margin-right: 18px;
+}
+
+.circle-text {
+    position: relative;
+}
+
+.circle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    animation: rotateCircle 10s linear infinite;
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.arrow-down {
+    width: 70px;
+    height: 70px;
+    background-color: #4770FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down .arrow-down-icon {
+    color: white;
+    height: 40px;
+}

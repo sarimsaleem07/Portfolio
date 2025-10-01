@@ -1,0 +1,94 @@
+.latest-projects-container {
+    margin-top: 48px;
+}
+
+
+.latest-projects-image {
+    background: #0E1018;
+    position: relative;
+    padding: 40px 40px 0px;
+    border-radius: 16px;
+
+}
+
+.latest-projects-image img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 400px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.latest-projects-image a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    line-height: 38px;
+    color: #4770FF;
+    filter: drop-shadow(rgba(26, 31, 44, 0.25) 0px 12px 12px);
+    margin-top: -10px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.1s ease-out 0s;
+}
+
+.latest-projects-data {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 24px;
+}
+
+.latest-projects-text {}
+
+.latest-projects-text h4 {
+    color: rgba(240, 242, 245, 0.7);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 2px;
+    border-bottom: 1px solid transparent;
+}
+
+.latest-projects-text h4:hover {
+    color: #4770FF;
+    cursor: pointer;
+}
+
+.latest-projects-text h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #576076;
+}
+
+.latest-projects-link {}
+
+.latest-projects-link a {
+    color: rgba(240, 242, 245, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(240, 242, 245, 0.7);
+    padding-bottom: 2px;
+}
+
+.latest-projects-link a:hover {
+    color: #4770FF;
+    border-bottom: 1px solid #4770FF;
+
+}
+
+
+.latest-icon {
+    stroke: #576076;
+    margin-left: 2px;
+}
