@@ -1,19 +1,19 @@
 import { lazy } from "react"
 
-const ExperianceProjects = lazy(() => import("./experianceProjects/ExperianceProjects"));
-const Faqs = lazy(() => import("./faqs/Faqs"));
-const Footer = lazy(() => import("./footer/Footer"));
-const Form = lazy(() => import("./form/Form"));
-const LatestProjects = lazy(() => import("./latestProjects/LatestProjects"));
-const Map = lazy(() => import("./map/Map"));
-const Navbar = lazy(() => import("./nav/Navbar"));
-const Wrapper = lazy(() => import("./pageWrapper/Wrapper"));
-const PersonalInfo = lazy(() => import("./personalInfo/PersonalInfo"));
-const Products = lazy(() => import("./products/Products"));
-const Profile = lazy(() => import("./profile/Profile"));
-const ServicesOffered = lazy(() => import("./servicesOffered/ServicesOffered"));
-const Testimonials = lazy(() => import("./testimonials/Testimonials"));
-const WorkTogether = lazy(() => import("./worktogether/WorkTogether"));
+import ExperianceProjects from "./experianceProjects/ExperianceProjects"
+import Faqs from "./faqs/Faqs"
+import Footer from "./footer/Footer"
+import Form from "./form/Form"
+import LatestProjects from "./latestProjects/LatestProjects"
+import Map from "./map/Map"
+import Navbar from "./nav/Navbar"
+import Wrapper from "./pageWrapper/Wrapper"
+import PersonalInfo from "./personalInfo/PersonalInfo"
+import Products from "./products/Products"
+import Profile from "./profile/Profile"
+import ServicesOffered from "./servicesOffered/ServicesOffered"
+import Testimonials from "./testimonials/Testimonials"
+import WorkTogether from "./worktogether/WorkTogether"
 
 
 
