@@ -1,5 +1,5 @@
 import React from 'react'
-import "./home.css"
+import "./Home.css"
 import { ExperianceProjects, ServicesOffered } from '../../component'
 
 const Home = () => {
