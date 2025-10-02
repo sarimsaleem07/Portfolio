@@ -55,7 +55,7 @@ button {
 [data-theme="light"] {
   --white: black; /* flip usage */
   --black: white;
-  --theme-background: #FBFCFE;
+  --theme-background: #EDF1F7;
   --highlight-color: #2563eb;
   --text-color: #141414cc;
   --border-color: #e5e7eb;
