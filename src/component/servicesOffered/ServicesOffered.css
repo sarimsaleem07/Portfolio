@@ -6,7 +6,7 @@
 
 .services-offered-item-box {
     padding: 24px;
-    background-color: black;
+    background-color: var(--black);
     border-radius: 16px;
 }
 
@@ -20,7 +20,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.333em;
-    color: white;
+    color: var(--white);
     margin-bottom: 0;
 }
 
@@ -41,13 +41,13 @@
 .services-offered-item {
     padding: 16px 16px 24px 16px;
     border-radius: 16px;
-    background-color: #0E1018;
+    background-color: var(--theme-background);
 }
 
 .services-offered-image {
     border-radius: 8px;
     padding: 25px 14px;
-    background: #000;
+    background: var(--black);
     display: flex;
     justify-content: center;
 }
@@ -62,7 +62,7 @@
 .services-offered-text h3 {
     font-size: 16px;
     font-weight: 500;
-    color: white;
+    color: var(--white);
     line-height: 1.5em;
     margin-top: 16px;
     text-align: center;
@@ -77,7 +77,7 @@
     font-weight: 600;
     line-height: 1.54em;
     display: block;
-    color: white;
+    color: var(--white);
     margin-bottom: 22px;
 }
 
@@ -93,9 +93,9 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: #0E1018;
+    background-color: var(--theme-background);
     white-space: nowrap;
-    color: white;
+    color: var(--white);
 }
 
 .slider-item {

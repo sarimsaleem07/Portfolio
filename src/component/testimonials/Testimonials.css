@@ -22,9 +22,9 @@
 }
 
 .arrow-buttons button {
-    background-color: #000;
+    background-color: var(--black);
     color: #576076;
-    border: 1px solid #1A1F2C;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 10px 12px;
     margin-left: 10px;
@@ -38,8 +38,8 @@
 }
 
 .arrow-buttons button:hover {
-    color: #60a5fa;
-    border-color: #60a5fa;
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
 }
 
 .slick-slide > div {
@@ -61,7 +61,7 @@
 }
 
 .testimonial-card {
-    background: #0E1018;
+    background: var(--theme-background);
     padding: 24px;
     border-radius: 8px;
 }
@@ -86,7 +86,7 @@
 
 .source {
     display: inline-block;
-    background: #1f2937;
+    background: var(--theme-background);
     color: #60a5fa;
     padding: 4px 8px;
     border-radius: 8px;
@@ -99,7 +99,7 @@
     margin-bottom: 30px;
     font-size: 17px;
     font-weight: 400;
-    color: #f0f2f5;
+    color: var(--text-color);
     line-height: 1.5em;
 }
 
@@ -111,6 +111,6 @@
 }
 
 .author span {
-    color: white;
+    color: var(--white);
     font-weight: 700;
 }

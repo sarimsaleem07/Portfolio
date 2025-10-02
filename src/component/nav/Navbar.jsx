@@ -2,11 +2,13 @@ import React from 'react'
 import "./Navbar.css"
 import { Container } from 'react-bootstrap'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { useTheme } from '../themeContext/ThemeContext';
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const { theme, toggleTheme } = useTheme();
   const isActive = (path) => location.pathname === path;
 
   return (
@@ -53,7 +55,13 @@ const Navbar = () => {
 
           <div className="nav-btns flex-center-item">
             <div className="nav-theme-btn">
-              <i className="ri-sun-line theme-svg" ></i>
+              <div className="nav-theme-btn" onClick={toggleTheme}>
+                {theme === "dark" ? (
+                  <i className="ri-sun-line theme-svg-sun"></i>
+                ) : (
+                  <i className="ri-moon-line theme-svg-moon"></i>
+                )}
+              </div>
             </div>
             <div className="nav-contact-btn">
               <button onClick={() => navigate('/contact')}>Let's Talk <i className="ri-corner-right-up-line contact-svg"></i></button>

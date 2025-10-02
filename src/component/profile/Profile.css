@@ -3,13 +3,13 @@
 }
 
 .profile-container {
-    background: black;
+    background: var(--black);
     padding: 24px;
     border-radius: 16px;
 }
 
 .profile-container-image {
-    background-color: #0E1018;
+    background-color: var(--theme-background);
     border-radius: 8px;
     text-align: center;
 }
@@ -35,13 +35,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    color: white;
+    color: var(--white);
     margin-bottom: 0;
 }
 
 .profile-container-text p {
     margin: 10px 0 10px;
-    color: rgba(240, 242, 245, 0.7);
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5em;
@@ -67,12 +67,12 @@
 }
 
 .profile-container-button .book {
-    color: white;
-    background-color: #4770FF;
+    color: var(--white);
+    background-color: var(--highlight-color);
 }
 
 .profile-container-button .copy {
-    color: rgba(240, 242, 245, 0.7);
+    color: var(--text-color);
     background: transparent;
     border: 1px solid #1A1F2C;
 }
@@ -91,7 +91,7 @@
 .profile-container-icon{
     padding: 8px 13px;
     border-radius: 8px;
-    background-color: #0E1018;
+    background-color: var(--theme-background);
     cursor: pointer;
 }
 

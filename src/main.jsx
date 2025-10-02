@@ -7,12 +7,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { ThemeProvider } from './component/themeContext/ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+
+  <ThemeProvider>
     <Router>
       <App />
     </Router>
-  </StrictMode>
-
+  </ThemeProvider>
 )

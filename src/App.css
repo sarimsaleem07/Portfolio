@@ -23,7 +23,7 @@ button {
 
 .papa {
     padding: 24px 0;
-    background-color: #0E1018;
+    background-color: var(--theme-background);
     background-image:
         /* url('./assets/background2.png'), */
         /* url('./assets/background1.png'), */
@@ -41,4 +41,22 @@ button {
         1000px 50%,
         1000px 50%;
     min-height: 100vh;
+}
+
+:root{
+    --white: white;
+    --black: black;
+    --theme-background: #0E1018;
+    --highlight-color: #3b82f6;
+    --text-color: #f0f2f5b3;
+    --border-color: #1A1F2C;
+}
+
+[data-theme="light"] {
+  --white: black; /* flip usage */
+  --black: white;
+  --theme-background: #FBFCFE;
+  --highlight-color: #2563eb;
+  --text-color: #141414cc;
+  --border-color: #e5e7eb;
 }

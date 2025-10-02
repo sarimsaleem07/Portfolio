@@ -10,13 +10,16 @@ import Works from './pages/works/Works'
 import Contact from './pages/contact/Contact'
 import Wrapper from './component/pageWrapper/Wrapper';
 import Footer from './component/footer/Footer'
+import { useState } from 'react';
 
 
 
 function App() {
+    const [theme, setTheme] = useState("dark");
+
   return (
-    <div className='papa'>
-      <Navbar />
+    <div className='papa' data-theme={theme}>
+      <Navbar theme={theme} setTheme={setTheme} />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<Wrapper><About /></Wrapper>} />

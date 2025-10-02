@@ -7,14 +7,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: #000;
+    background-color: var(--black);
     align-items: center;
     border-radius: 16px;
     box-shadow: rgba(26, 31, 44, 0.25) 0px 1px 2px 0px;
 }
 
 .navbar-logo h1 {
-    color: white;
+    color: var(--white);
     margin: 0;
     font-size: 38px;
     cursor: pointer;
@@ -50,18 +50,18 @@
 .navbar-list-item:hover,
 .navbar-list-item:active,
 .navbar-list-item:focus {
-    background: #0E1018;
-    color: white;
+    background: var(--theme-background);
+    color: var(--white);
 }
 
 .navbar-list-item.active .nav-svg,
 .navbar-list-item:hover .nav-svg {
-    color: white;
+    color: var(--white);
 }
 
 .navbar-list-item.active span,
 .navbar-list-item:hover span {
-    color: white;
+    color: var(--white);
 }
 
 .nav-svg {
@@ -82,8 +82,14 @@
     text-decoration: none;
 }
 
-.nav-theme-btn .theme-svg {
+.nav-theme-btn .theme-svg-sun {
     color: #fcba03;
+    font-size: 27px;
+    cursor: grabbing;
+}
+
+.nav-theme-btn .theme-svg-moon {
+    color: var(--white);
     font-size: 27px;
     cursor: grabbing;
 }
@@ -96,19 +102,19 @@
     padding: 10px 30px;
     border-radius: 10px;
     margin-left: 30px;
-    background: #0E1018;
+    background: var(--theme-background);
     outline: none;
     border: none;
-    color: white;
+    color: var(--white);
     font-size: 18px;
 }
 
 .nav-contact-btn button:hover {
-    background: #4770ff;
+    background: var(--highlight-color);
 }
 
 .contact-svg {
-    color: white;
+    color: var(--white);
     font-size: 20px;
     margin-top: 20px;
 }

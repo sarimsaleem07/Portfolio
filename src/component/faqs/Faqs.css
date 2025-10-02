@@ -4,7 +4,7 @@
 }
 
 .faq-container[open] {
-  border: 1px solid #0E1018;
+  border: 1px solid var(--theme-background);
 }
 
 .faqs-wrapper {
@@ -23,7 +23,7 @@
 
 .faqs-item {
   border-radius: 4px;
-  background-color: #0E1018;
+  background-color: var(--theme-background);
   transition: all 0.3s ease-in-out;
   padding: 24px;
   overflow: hidden;
@@ -33,18 +33,18 @@
   --width: 20px;
   --height: 3px;
   --radius: 1px;
-  --color: rgba(240, 242, 245, 0.7);
+  --color: var(--text-color);
   margin: 0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   position: relative;
   font-size: 24px;
-  color: rgba(240, 242, 245, 0.7);
+  color: var(--text-color);
   padding-right: 30px; /* Space for the icon */
 }
 
 .faqs-item:hover .faqs-title {
-  color: #fff;
+  color: var(--white);
 }
 
 .faqs-title::before,
@@ -67,7 +67,7 @@
 
 .faqs-item[open] {
   background-color: transparent;
-  border: 1px solid #0E1018;
+  border: 1px solid var(--theme-background);
 }
 
 .faqs-item[open] .faqs-title {
