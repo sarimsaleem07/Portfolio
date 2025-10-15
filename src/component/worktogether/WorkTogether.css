@@ -25,7 +25,7 @@
     display: inline-block;
     font-size: 40px;
     font-weight: 500;
-    color: #576076;
+    color: var(--text-color);
     text-decoration: none;
     line-height: 1;
     position: relative;
@@ -36,7 +36,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #576076;
+    background-color: var(--theme-background);
     border-radius: 50%;
     content: "";
     top: 50%;

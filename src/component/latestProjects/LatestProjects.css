@@ -30,7 +30,7 @@
     background-color: var(--white);
     text-align: center;
     line-height: 38px;
-    color: #4770FF;
+    color: var(--highlight-color);
     filter: drop-shadow(rgba(26, 31, 44, 0.25) 0px 12px 12px);
     margin-top: -10px;
     visibility: hidden;
@@ -54,11 +54,11 @@
     font-weight: 500;
     line-height: 1.3em;
     margin-bottom: 2px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .latest-projects-text h4:hover {
-    color: #4770FF;
+    color: var(--highlight-color);
     cursor: pointer;
 }
 
@@ -66,7 +66,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
-    color: #576076;
+    color: var(--text-color);
 }
 
 .latest-projects-link {}
@@ -77,18 +77,18 @@
     font-weight: 400;
     line-height: 1em;
     text-decoration: none;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
     padding-bottom: 2px;
 }
 
 .latest-projects-link a:hover {
-    color: #4770FF;
-    border-bottom: 1px solid #4770FF;
+    color: var(--highlight-color);
+    border-bottom: 2px solid var(--highlight-color);
 
 }
 
 
 .latest-icon {
-    stroke: #576076;
+    stroke: var(--text-color);
     margin-left: 2px;
 }

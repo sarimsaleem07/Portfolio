@@ -9,108 +9,59 @@ import servicesOffered6 from "../../assets/servicesOffered6.webp"
 import servicesOffered7 from "../../assets/servicesOffered7.svg"
 import servicesOffered8 from "../../assets/servicesOffered8.svg"
 
+const data = [
+    { image: servicesOffered1, title: "UI UX Design" },
+    { image: servicesOffered2, title: "Mobile App" },
+    { image: servicesOffered3, title: "Responsive Design" },
+    { image: servicesOffered7, title: "Web Development" },
+    { image: servicesOffered5, title: "Code Refactoring & Cleanup" },
+    { image: servicesOffered6, title: "Maintenance & Updates" },
+    { image: servicesOffered4, title: "Cross-Browser Compatibility" },
+    { image: servicesOffered8, title: "Bug Fixing & UI Debugging" }
+];
+
+// Utility function: data ko 4-4 ke groups me todna
+const chunkArray = (arr, size) =>
+    arr.reduce((acc, _, i) => 
+        (i % size ? acc : [...acc, arr.slice(i, i + size)]), []
+    );
+
 const Products = () => {
+    const rows = chunkArray(data, 4); // 4-4 items ek row
+
     return (
         <div className='product'>
             <div className="about-data">
                 <div className="about-heading">
-                    <h1>Services I <span className="highlight">Offered</span> 👋</h1>
+                    <h1>Services I <span className="highlight">Offered</span></h1>
                     <button className="hire-button">
                         <span className="dot"></span> Available For Hire
                     </button>
                 </div>
                 <p className='about-data-para'>
-                    Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert <span className="highlight">Product Design and Development</span> Services!
+                    Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert 
+                    <span className="highlight"> Product Design and Development </span> Services!
                 </p>
             </div>
 
-            <Row className='mt-4'>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered1} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>UI UX Design</h3>
-                        </div>
-                    </div>
-                </Col>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered2} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Mobile App</h3>
-                        </div>
-                    </div>
-                </Col>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered3} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Responsive Design</h3>
-                        </div>
-                    </div>
-                </Col>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered7} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Web Development</h3>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-
-            <Row className='mt-4'>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered5} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Code Refactoring & Cleanup</h3>
-                        </div>
-                    </div>
-                </Col>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered6} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Maintenance & Updates</h3>
-                        </div>
-                    </div>
-                </Col>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered4} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Cross-Browser Compatibility</h3>
-                        </div>
-                    </div>
-                </Col>
-                <Col md={6} lg={3}>
-                    <div className="services-offered-item">
-                        <div className="services-offered-image">
-                            <img src={servicesOffered8} alt="" />
-                        </div>
-                        <div className="services-offered-text">
-                            <h3>Bug Fixing & UI Debugging</h3>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
+            {rows.map((row, rowIndex) => (
+                <Row className="mt-4" key={rowIndex}>
+                    {row.map((item, index) => (
+                        <Col md={6} lg={3} key={index}>
+                            <div className="services-offered-item">
+                                <div className="services-offered-image">
+                                    <img src={item.image} alt={item.title} />
+                                </div>
+                                <div className="services-offered-text">
+                                    <h3>{item.title}</h3>
+                                </div>
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+            ))}
         </div>
     )
 }
 
-export default Products
+export default Products;

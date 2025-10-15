@@ -36,7 +36,7 @@
     padding: 0 6px;
     cursor: pointer;
     text-decoration: none;
-    color: #576076;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
@@ -73,17 +73,12 @@
     font-size: 17px;
 }
 
-
-
-
-.nav-btns {}
-
 .nav-theme-btn {
     text-decoration: none;
 }
 
 .nav-theme-btn .theme-svg-sun {
-    color: #fcba03;
+    color: var(--icon-color);
     font-size: 27px;
     cursor: grabbing;
 }
@@ -93,9 +88,6 @@
     font-size: 27px;
     cursor: grabbing;
 }
-
-
-.nav-contact-btn {}
 
 
 .nav-contact-btn button {
@@ -111,10 +103,84 @@
 
 .nav-contact-btn button:hover {
     background: var(--highlight-color);
+    color: var(--btn-text-color) !important;
 }
 
 .contact-svg {
-    color: var(--white);
     font-size: 20px;
     margin-top: 20px;
+}
+
+.nav-contact-btn button .contact-svg:hover {
+    color: var(--btn-text-color);
+}
+
+.drawer-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer-menu-list li {
+    padding: 14px 0;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.2s ease;
+}
+
+.drawer-menu-list li:hover {
+    color: var(--highlight-color);
+    padding-left: 10px;
+}
+
+/* 🔹 Hamburger Icon */
+.hamburger {
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 28px;
+    color: var(--white);
+}
+
+.drawer-title {
+    color: var(--white);
+    margin: 0;
+    text-align: start;
+}
+
+.drawer-title {
+    color: var(--white);
+    font-size: 22px;
+    margin: 0;
+    padding-right: 40px;
+    /* space for the close icon */
+}
+
+:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-header {
+    background-color: var(--theme-background);
+}
+
+:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-body {
+    background-color: var(--theme-background);
+    color: var(--white);
+}
+
+/* :where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-close{
+    display: none;
+} */
+
+:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 26px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-close:hover {
+    color: var(--highlight-color);
+    transform: rotate(90deg);
 }

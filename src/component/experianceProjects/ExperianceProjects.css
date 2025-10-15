@@ -63,9 +63,9 @@
 .recent-projects-text a {
     font-size: 16px;
     font-weight: 400;
-    color: #4770FF;
+    color: var(--highlight-color);
     line-height: 1.5em;
-    border-bottom: 1px solid #DBDFE5;
+    border-bottom: 2px solid var(--border-color);
     text-decoration: none;
 }
 
@@ -125,7 +125,7 @@
 .plus-icon {
     font-size: 36px;
     color: var(--white);
-    background: #4770FF;
+    background: var(--highlight-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -217,7 +217,7 @@
 .subtitle {
     font-size: 15px;
     font-weight: 400;
-    color: #576076;
+    color: var(--text-color);
     line-height: 1.42em;
     margin-bottom: 0;
 }

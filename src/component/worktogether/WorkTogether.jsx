@@ -2,7 +2,7 @@ import React from 'react';
 import './WorkTogether.css';
 
 const WorkTogether = () => {
-    const links = Array(8).fill("Let's 👋 Work Together");
+    const links = Array(8).fill("Let’s Build Something Great Together");
 
     return (
         <div className="work-together">

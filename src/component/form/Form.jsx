@@ -52,7 +52,7 @@ const Form = () => {
     <div className='form-parent'>
       <div className="about-data">
         <div className="about-heading">
-          <h1>Let's 👋 <span className="highlight">Work </span> Together</h1>
+          <h1>Let's <span className="highlight">Work </span> Together</h1>
         </div>
         <p className='contact-data-para'>
           I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.

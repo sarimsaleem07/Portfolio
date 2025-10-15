@@ -83,7 +83,7 @@
 
 .about-experience-data p {
     margin: 5px 0 0;
-    color: #576076;
+    color: var(--text-color);
 }
 
 .circle-area {
@@ -117,7 +117,7 @@
 .arrow-down {
     width: 70px;
     height: 70px;
-    background-color: #4770FF;
+    background-color: var(--highlight-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;

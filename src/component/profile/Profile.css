@@ -55,7 +55,7 @@
 .profile-container-button button {
     border-radius: 8px;
     border: none;
-    padding: 16px 37px;
+    padding: 16px 0;
     font-size: 16px;
     font-weight: 500;
     display: flex;
@@ -64,17 +64,22 @@
     gap: 10px;
     font-family: "Bricolage Grotesque";
     margin-top: 15px;
+    width: 100%;
 }
 
 .profile-container-button .book {
-    color: var(--white);
+    color: var(--btn-text-color);
     background-color: var(--highlight-color);
 }
 
+.profile-container-button .book a {
+    color: var(--btn-text-color);
+
+}
 .profile-container-button .copy {
     color: var(--text-color);
     background: transparent;
-    border: 1px solid #1A1F2C;
+    border: 2px solid var(--border-color);
 }
 
 .profile-container-button-svg{
@@ -97,5 +102,5 @@
 
 .profile-container-icon-svg{
     font-size: 24px;
-    color: #64748B;
+    color: var(--text-color);
 }

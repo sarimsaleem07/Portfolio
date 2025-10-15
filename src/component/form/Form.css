@@ -19,13 +19,13 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.4em;
-    color: #f0f2f5;
+    color: var(--text-color);
 }
 
 .form-input {
     border-radius: 8px;
     padding: 16px 10px;
-    border: 1px solid  #1A1F2C;
+    border: 1px solid  var(--border-color);
     font-size: 16px;
     font-weight: 400;
     background-color: var(--black);
@@ -40,7 +40,7 @@
 .form-input:active,
 .form-input:focus {
     background-color: var(--black);
-    border: 1px solid #1A1F2C;
+    border: 1px solid var(--border-color);
     color: var(--white);
 }
 
@@ -51,8 +51,8 @@
 .contact-submit-btn {
     font-size: 16px;
     font-weight: 500;
-    color: var(--white);
-    background-color: #4770FF;
+    color: var(--btn-text-color);
+    background-color: var(--highlight-color);
     padding: 16px 24px;
     width: 100%;
     border: 0;

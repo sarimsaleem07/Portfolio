@@ -50,13 +50,15 @@ button {
     --highlight-color: #3b82f6;
     --text-color: #f0f2f5b3;
     --border-color: #1A1F2C;
+    --icon-color: #FAAD3D;
+    --btn-text-color: white;
 }
 
 [data-theme="light"] {
-  --white: black; /* flip usage */
+  --white: black;
   --black: white;
   --theme-background: #EDF1F7;
-  --highlight-color: #2563eb;
+  --highlight-color: #0051ff;
   --text-color: #141414cc;
   --border-color: #e5e7eb;
 }

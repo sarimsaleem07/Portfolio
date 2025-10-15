@@ -9,7 +9,7 @@ const PersonalInfo = () => {
 
             <div className="about-data">
                 <div className="about-heading">
-                    <h1>Hi, This Is <span className="highlight">Sarim Salim</span> 👋</h1>
+                    <h1>Hi, This Is <span className="highlight">Sarim Salim</span></h1>
                     <button className="hire-button">
                         <span className="dot"></span> Available For Hire
                     </button>

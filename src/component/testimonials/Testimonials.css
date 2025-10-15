@@ -13,7 +13,7 @@
 .header-with-arrows h2 {
     font-size: 30px;
     font-weight: 500;
-    color: #f0f2f5;
+    color: var(--text-color);
     margin-bottom: 0;
 }
 
@@ -23,7 +23,7 @@
 
 .arrow-buttons button {
     background-color: var(--black);
-    color: #576076;
+    color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 10px 12px;
@@ -74,7 +74,7 @@
 }
 
 .stars {
-    color: #FAAD3D;
+    color: var(--icon-color);
     font-size: 0.9rem;
     margin-bottom: 0px;
 
@@ -87,6 +87,7 @@
 .source {
     display: inline-block;
     background: var(--theme-background);
+    border: 2px solid var(--border-color);
     color: #60a5fa;
     padding: 4px 8px;
     border-radius: 8px;
@@ -106,7 +107,7 @@
 .author {
     font-size: 16px;
     font-weight: 400;
-    color: #616670;
+    color: var(--text-color);
     margin-bottom: 0;
 }
 

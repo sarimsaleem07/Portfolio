@@ -33,13 +33,12 @@ const Profile = () => {
                 </div>
                 <div className="profile-container-text-parent">
                     <div className="profile-container-text">
-                        <h2>Sarim Salim 👋</h2>
+                        <h2>Sarim Salim</h2>
                         <p>A passionate <span className="highlight"> Frontend Developer </span> 🖥️  with <span className="highlight"> 2 years </span> of hands-on experience crafting clean, responsive, and user-friendly web interfaces.  </p>
                     </div>
                     <div className="profile-container-button">
-                        <a href="../../assets/Sarim'sResume.pdf" download className="anchor-book">
-                            <button className="book"><FaDownload className="profile-container-button-svg" />Resume</button>
-                        </a>
+
+                        <button className="book"><FaDownload className="profile-container-button-svg" /><a href="../../assets/Sarim'sResume.pdf" download className="anchor-book">Resume</a></button>
                         <button className="copy" onClick={handleCopyEmail} ><LuCopy className="profile-container-button-svg" /> Copy Email</button>
                     </div>
                     <div className="profile-container-icons">

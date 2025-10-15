@@ -9,6 +9,27 @@ import { FaArrowRightLong, FaArrowTrendUp } from 'react-icons/fa6'
 import { useNavigate } from 'react-router-dom'
 
 const ServicesOffered = () => {
+
+    const data = [
+        {
+            image: servicesOffered1,
+            title: "UI UX Design"
+        },
+        {
+            image: servicesOffered2,
+            title: "Mobile App"
+        },
+        {
+            image: servicesOffered3,
+            title: "Product Design"
+        },
+        {
+            image: servicesOffered4,
+            title: "Branding"
+        },
+
+    ]
+
     const navigate = useNavigate()
     return (
         <div className='services-offered-main'>
@@ -22,48 +43,19 @@ const ServicesOffered = () => {
                                     <a href="" onClick={() => navigate("/services")}>See All Services <FaArrowRightLong /></a>
                                 </div>
                                 <Row className='mt-4'>
-                                    <Col md={6} lg={3}>
-                                        <div className="services-offered-item">
-                                            <div className="services-offered-image">
-                                                <img src={servicesOffered1} alt="" />
+                                    {data.map((item, index) => (
+                                        <Col md={6} lg={3}>
+                                            <div className="services-offered-item">
+                                                <div className="services-offered-image">
+                                                    <img src={item.image} alt="" />
+                                                </div>
+                                                <div className="services-offered-text">
+                                                    <h3>{item.title}</h3>
+                                                </div>
                                             </div>
-                                            <div className="services-offered-text">
-                                                <h3>UI UX Design</h3>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col md={6} lg={3}>
-                                        <div className="services-offered-item">
-                                            <div className="services-offered-image">
-                                                <img src={servicesOffered2} alt="" />
-                                            </div>
-                                            <div className="services-offered-text">
-                                                <h3>Mobile App</h3>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col md={6} lg={3}>
-                                        <div className="services-offered-item">
-                                            <div className="services-offered-image">
-                                                <img src={servicesOffered3} alt="" />
-                                            </div>
-                                            <div className="services-offered-text">
-                                                <h3>Product Design</h3>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col md={6} lg={3}>
-                                        <div className="services-offered-item">
-                                            <div className="services-offered-image">
-                                                <img src={servicesOffered4} alt="" />
-                                            </div>
-                                            <div className="services-offered-text">
-                                                <h3>Branding</h3>
-                                            </div>
-                                        </div>
-                                    </Col>
+                                        </Col>
+                                    ))}
                                 </Row>
-
                             </div>
                         </Col>
                         <Col md={4}>
@@ -71,18 +63,18 @@ const ServicesOffered = () => {
                                 <div className="services-offered-card-title2">
                                     <div className="scrolling-info">
                                         <div className="slider-item">
-                                            <p>Available For Hire 🚀 Crafting Digital Experiences 🎨 Available For Hire 🚀 Crafting Digital Experiences 🎨</p>
+                                            <p>I help businesses craft intuitive, user-friendly digital products that not only look great but also deliver meaningful results</p>
                                         </div>
                                     </div>
-                                    <h2>Let's👋 <br /> Work Together</h2>
+                                    <h2>Let's<br /> Work Together</h2>
                                     <a href="" onClick={() => navigate("/contact")}>Let's Talk  <FaArrowTrendUp /></a>
                                 </div>
                             </div>
                         </Col>
                     </Row>
                 </div>
-            </Container>
-        </div>
+            </Container >
+        </div >
     )
 }
 
