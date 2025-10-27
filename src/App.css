@@ -51,7 +51,7 @@ button {
     --text-color: #f0f2f5b3;
     --border-color: #1A1F2C;
     --icon-color: #FAAD3D;
-    --btn-text-color: white;
+    --btn-text-color: white; 
 }
 
 [data-theme="light"] {

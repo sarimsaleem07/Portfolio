@@ -15,19 +15,17 @@ const Navbar = () => {
 
   const handleNavigate = (path) => {
     navigate(path);
-    setOpenDrawer(false); // close drawer after navigation
+    setOpenDrawer(false);
   };
 
   return (
     <div className="navbar">
-      <Container fluid>
+      <Container>
         <div className="navbar-sub-parent">
-          {/* Logo */}
           <div className="navbar-logo">
-            <h1 onClick={() => handleNavigate("/")}>Sarim .</h1>
+            <h1 onClick={() => handleNavigate("/")}>Sarim</h1>
           </div>
 
-          {/* Menu List for large screens */}
           <div className="navbar-list-items-parent d-none d-lg-flex">
             <ul className="navbar-list-items flex-center-item ms-auto">
               <li
@@ -94,6 +92,8 @@ const Navbar = () => {
         placement="right"
         onClose={() => setOpenDrawer(false)}
         open={openDrawer}
+        // getContainer={false} 
+        style={{ position: "absolute" }}
         closeIcon={
           <i
             className="ri-close-line drawer-close-icon"

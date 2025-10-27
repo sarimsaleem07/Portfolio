@@ -12,8 +12,7 @@ import Wrapper from './component/pageWrapper/Wrapper';
 import Footer from './component/footer/Footer'
 import { useState } from 'react';
 import IntroAnimation from './pages/introAnimation/IntroAnimation';
-
-
+import "./utils/Media.css"
 
 function App() {
   const [theme, setTheme] = useState("dark");

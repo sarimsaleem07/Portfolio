@@ -34,7 +34,7 @@ const Profile = () => {
                 <div className="profile-container-text-parent">
                     <div className="profile-container-text">
                         <h2>Sarim Salim</h2>
-                        <p>A passionate <span className="highlight"> Frontend Developer </span> 🖥️  with <span className="highlight"> 2 years </span> of hands-on experience crafting clean, responsive, and user-friendly web interfaces.  </p>
+                        <p>A passionate <span className="highlight"> Frontend Developer </span> with <span className="highlight"> 2 years </span> of hands-on experience crafting clean, responsive, and user-friendly web interfaces.  </p>
                     </div>
                     <div className="profile-container-button">
 

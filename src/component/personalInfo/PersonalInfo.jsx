@@ -15,7 +15,7 @@ const PersonalInfo = () => {
                     </button>
                 </div>
                 <p className='about-data-para'>
-                    A Passionate <span className="highlight">Front-End Developer</span> 🖥️ & <span className="highlight">Product Designer</span> having <span className="highlight">2+ years</span> of Experiences over <span className="highlight">4+</span> Country Worldwide.
+                    A Passionate <span className="highlight">Front-End Developer</span> & <span className="highlight">Product Designer</span> having <span className="highlight">2+ years</span> of Experiences over <span className="highlight">4+</span> Country Worldwide.
                 </p>
 
                 <div className="about-experience">
