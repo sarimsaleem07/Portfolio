@@ -5,7 +5,7 @@ import { useState } from "react"
 import { toast, ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 import { FaDownload } from "react-icons/fa6"
-import { PiMicrosoftOutlookLogo } from "react-icons/pi"
+import { FaWhatsapp } from "react-icons/fa"
 import { BiLogoGmail } from "react-icons/bi"
 import { profileData } from "../../data/portfolioData"
 
@@ -49,7 +49,7 @@ const Profile = () => {
                             <a href={profileData.socials.github} target="_blank" rel="noopener noreferrer"><FaGithub className="profile-container-icon-svg" /></a>
                         </div>
                         <div className="profile-container-icon">
-                            <a href={profileData.socials.outlook}><PiMicrosoftOutlookLogo className="profile-container-icon-svg" /></a>
+                            <a href={profileData.socials.whatsapp} target="_blank" rel="noopener noreferrer"><FaWhatsapp className="profile-container-icon-svg" /></a>
                         </div>
                         <div className="profile-container-icon">
                             <a href={profileData.socials.gmail}><BiLogoGmail className="profile-container-icon-svg" /></a>

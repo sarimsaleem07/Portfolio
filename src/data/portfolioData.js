@@ -1,8 +1,10 @@
 import htmlIcon from '../assets/html.png'
 import cssIcon from '../assets/css.png'
+// import jsIcon from '../assets/javascript.png'
 import jsIcon from '../assets/javascript.png'
 import reactIcon from '../assets/react.png'
-import bootstrapIcon from '../assets/bootstrap.png'
+// import bootstrapIcon from '../assets/bootstrap.png'
+import tailwind from '../assets/tailwind.svg'
 import sassIcon from '../assets/sass.png'
 import kamelpayLogo from '../assets/kamelpay-logo.png'
 import cave1 from '../assets/projects/cave-1.webp'
@@ -45,7 +47,7 @@ export const profileData = {
   socials: {
     linkedin: 'https://www.linkedin.com/in/sarim-salim-7b96a92aa/',
     github: 'https://github.com/sarimsaleem?tab=repositories',
-    outlook: 'mailto:Muhammad.Sarim@kamelpay.com',
+    whatsapp: 'https://wa.me/923308639737',
     gmail: 'mailto:sarimsaleem07@gmail.com',
   },
 }
@@ -72,9 +74,9 @@ export const workExperience = [
 export const skills = [
   { name: 'HTML', icon: htmlIcon },
   { name: 'CSS', icon: cssIcon },
-  { name: 'JAVASCRIPT', icon: jsIcon },
   { name: 'REACT', icon: reactIcon },
-  { name: 'BOOTSTRAP', icon: bootstrapIcon },
+  { name: 'JAVASCRIPT', icon: jsIcon },
+  { name: 'BOOTSTRAP', icon: tailwind },
   { name: 'SASS', icon: sassIcon },
 ]
 
