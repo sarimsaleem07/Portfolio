@@ -12,6 +12,7 @@ import Wrapper from './component/pageWrapper/Wrapper';
 import Footer from './component/footer/Footer'
 import { useState } from 'react';
 import IntroAnimation from './pages/introAnimation/IntroAnimation';
+import NotFound from './pages/notFound/NotFound';
 import "./utils/Media.css"
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/services' element={<Wrapper><Services /></Wrapper>} />
         <Route path='/works' element={<Wrapper><Works /></Wrapper>} />
         <Route path='/contact' element={<Wrapper><Contact /></Wrapper>} />
+        <Route path='*' element={<Wrapper><NotFound /></Wrapper>} />
       </Routes>
       {!hideNavbarAndFooter && <Footer />}
     </div>

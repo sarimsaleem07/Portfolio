@@ -24,7 +24,7 @@ const Form = () => {
           _next: 'https://yourwebsite.com/thank-you',
         };
 
-        const response = await fetch('https://formsubmit.co/ajax/sarimsaleem07@gmail.com', {
+        const response = await fetch('https://formsubmit.co/ajax/0f2fde426d460ef8d304fb6dcc84e445', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

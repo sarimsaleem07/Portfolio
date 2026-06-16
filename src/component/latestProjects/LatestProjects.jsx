@@ -1,65 +1,53 @@
-import { FaArrowTrendUp } from 'react-icons/fa6';
+import { FaArrowTrendUp, FaImages } from 'react-icons/fa6';
 import "./LatestProjects.css";
 import { Image } from 'antd';
-import work1 from "../../assets/work1.webp";
-import work2 from "../../assets/work2.webp";
-import work3 from "../../assets/work3.webp";
-
-const projects = [
-  {
-    image: work1,
-    title: "Cave Counselling – Mental Health Platform",
-    role: "Product Designer | UX/UI Specialist",
-    link: "https://www.cavecounselling.com/"
-  },
-  {
-    image: work2,
-    title: "Desert Safari UAE – Website & Booking Platform",
-    role: "Product Designer | UX/UI Design | Web Development",
-    link: "https://desert-safari-weld.vercel.app/"
-  },
-  {
-    image: work3,
-    title: "Digital Marketing Agency – Brand & Web Design",
-    role: "Lead Designer | Brand Strategist",
-    link: "https://igloo-theta.vercel.app/"
-  }
-];
+import { projects } from '../../data/portfolioData';
 
 const LatestProjects = () => {
   return (
     <div className='latest-projects'>
       <div className="about-data">
         <div className="about-heading">
-          <h1>Check Out My Latest <span className="highlight">Projects </span></h1>
+          <h1>Check Out My Latest <span className="highlight">Projects</span></h1>
         </div>
         <p className='contact-data-para'>
-          I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.
+          A selection of real-world products I've designed and built — click any image to browse the full gallery.
         </p>
       </div>
 
       {projects.map((project, index) => (
         <div className="latest-projects-container" key={index}>
-          <div className="latest-projects-image">
-            <Image
-              src={project.image}
-              alt={project.title}
-              width="100%"
-              height={400}
-              style={{ borderRadius: '8px 8px 0 0', objectFit: 'cover', objectPosition: 'center' }}
-            />
+
+          <div className="latest-projects-gallery-wrap">
+            <Image.PreviewGroup items={project.images.map(src => ({ src }))}>
+              <div className="gallery-main-image">
+                <Image
+                  src={project.images[0]}
+                  alt={project.title}
+                  preview={{ mask: <div className="gallery-mask"><FaImages /><span>View Gallery ({project.images.length})</span></div> }}
+                />
+              </div>
+            </Image.PreviewGroup>
           </div>
+
           <div className="latest-projects-data">
             <div className="latest-projects-text">
               <h4>{project.title}</h4>
-              <h6>{project.role}</h6>
+              <h6 className="latest-projects-subtitle">{project.subtitle}</h6>
+              <p className="latest-projects-desc">{project.description}</p>
+              <div className="latest-projects-tags">
+                {project.tags.map((tag, i) => (
+                  <span className="project-tag" key={i}>{tag}</span>
+                ))}
+              </div>
             </div>
             <div className="latest-projects-link">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                Visit Site <FaArrowTrendUp className='latest-icon' />
+                View Case Study <FaArrowTrendUp className='latest-icon' />
               </a>
             </div>
           </div>
+
         </div>
       ))}
     </div>

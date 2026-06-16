@@ -2,59 +2,75 @@
     margin-top: 48px;
 }
 
-
-.latest-projects-image {
+/* ── Gallery wrapper ── */
+.latest-projects-gallery-wrap {
     background: var(--theme-background);
-    position: relative;
-    padding: 40px 40px 0px;
-    border-radius: 16px;
-
+    padding: 24px 24px 0;
+    border-radius: 16px 16px 0 0;
 }
 
-.latest-projects-image img {
-    border-radius: 8px 8px 0px 0px;
+/* Main large image */
+.gallery-main-image {
     width: 100%;
-    height: 400px;
-    object-position: top;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-main-image .ant-image {
+    display: block;
+    width: 100%;
+}
+
+.gallery-main-image img {
+    width: 100%;
+    height: 420px;
     object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.4s ease, filter 0.3s ease;
 }
 
-.latest-projects-image a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 9;
-    width: 40px;
-    height: 40px;
-    background-color: var(--white);
-    text-align: center;
-    line-height: 38px;
-    color: var(--highlight-color);
-    filter: drop-shadow(rgba(26, 31, 44, 0.25) 0px 12px 12px);
-    margin-top: -10px;
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 50%;
-    transition: all 0.1s ease-out 0s;
+.gallery-main-image:hover img {
+    transform: scale(1.02);
+    filter: brightness(0.88);
 }
 
+/* Custom preview mask — main image */
+.gallery-mask {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Bricolage Grotesque";
+}
+
+.gallery-mask svg {
+    font-size: 20px;
+}
+
+/* ── Project info row ── */
 .latest-projects-data {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    padding: 24px;
+    padding: 20px 24px 24px;
+    background: var(--black);
+    border-radius: 0 0 16px 16px;
 }
-
-.latest-projects-text {}
 
 .latest-projects-text h4 {
     color: var(--text-color);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.3em;
-    margin-bottom: 2px;
-    border-bottom: 2px solid transparent;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.latest-projects-text h4 {
+    transition: color 0.2s ease;
 }
 
 .latest-projects-text h4:hover {
@@ -62,33 +78,70 @@
     cursor: pointer;
 }
 
-.latest-projects-text h6 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5em;
-    color: var(--text-color);
+.latest-projects-subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--highlight-color);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
-.latest-projects-link {}
+.latest-projects-desc {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.6em;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    max-width: 520px;
+}
+
+.latest-projects-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tag {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--highlight-color);
+    background: transparent;
+    border: 1px solid var(--highlight-color);
+    border-radius: 20px;
+    padding: 3px 10px;
+    opacity: 0.8;
+    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+    cursor: default;
+}
+
+.project-tag:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+    opacity: 1;
+}
+
+.latest-projects-link {
+    flex-shrink: 0;
+    align-self: flex-end;
+}
 
 .latest-projects-link a {
     color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
-    line-height: 1em;
     text-decoration: none;
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 2px;
+    white-space: nowrap;
+    transition: color 0.25s ease, border-bottom-color 0.25s ease;
 }
 
 .latest-projects-link a:hover {
     color: var(--highlight-color);
-    border-bottom: 2px solid var(--highlight-color);
-
+    border-bottom-color: var(--highlight-color);
 }
 
-
 .latest-icon {
-    stroke: var(--text-color);
-    margin-left: 2px;
+    margin-left: 4px;
 }

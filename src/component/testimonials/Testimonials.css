@@ -29,7 +29,7 @@
     padding: 10px 12px;
     margin-left: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
     font-size: 20px;
     font-weight: 700;
     display: flex;
@@ -40,25 +40,25 @@
 .arrow-buttons button:hover {
     color: var(--highlight-color);
     border-color: var(--highlight-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
-.slick-slide > div {
+.slick-slide>div {
     display: flex;
     justify-content: center;
     /* padding: 0 10px; */
 }
 
 .testimonial-card-wrapper {
-  margin: 0 ;
+    margin: 0;
 }
 
 .slick-list {
-  /* margin: 0 -10px; */
+    /* margin: 0 -10px; */
 }
 
-.slick-slider{
-    
-}
+.slick-slider {}
 
 .testimonial-card {
     background: var(--theme-background);

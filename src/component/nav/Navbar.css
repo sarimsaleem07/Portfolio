@@ -18,6 +18,11 @@
     margin: 0;
     font-size: 38px;
     cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.navbar-logo h1:hover {
+    color: var(--highlight-color);
 }
 
 .navbar-list-items-parent {
@@ -44,6 +49,10 @@
     padding: 10px 12px !important;
     border-radius: 8px;
     display: flex;
+}
+
+.navbar-list-item {
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .navbar-list-item.active,
@@ -81,12 +90,20 @@
     color: var(--icon-color);
     font-size: 27px;
     cursor: grabbing;
+    transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 .nav-theme-btn .theme-svg-moon {
     color: var(--white);
     font-size: 27px;
     cursor: grabbing;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.nav-theme-btn:hover .theme-svg-sun,
+.nav-theme-btn:hover .theme-svg-moon {
+    transform: rotate(20deg) scale(1.15);
+    opacity: 0.8;
 }
 
 
@@ -99,11 +116,15 @@
     border: none;
     color: var(--white);
     font-size: 18px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .nav-contact-btn button:hover {
     background: var(--highlight-color);
     color: var(--btn-text-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3);
 }
 
 .contact-svg {
@@ -141,6 +162,12 @@
     margin-left: 20px;
     font-size: 28px;
     color: var(--white);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hamburger:hover {
+    color: var(--highlight-color);
+    transform: scale(1.1);
 }
 
 .drawer-title {

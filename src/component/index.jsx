@@ -6,6 +6,7 @@ import Footer from "./footer/Footer"
 import Form from "./form/Form"
 import LatestProjects from "./latestProjects/LatestProjects"
 import Map from "./map/Map"
+import MyProcess from "./myProcess/MyProcess"
 import Navbar from "./nav/Navbar"
 import Wrapper from "./pageWrapper/Wrapper"
 import PersonalInfo from "./personalInfo/PersonalInfo"
@@ -24,6 +25,7 @@ export {
     Form,
     LatestProjects,
     Map,
+    MyProcess,
     Navbar,
     Wrapper,
     PersonalInfo,

@@ -1,10 +1,11 @@
 import React from 'react'
-import { Faqs, Products, Testimonials, WorkTogether } from '../../component'
+import { Faqs, MyProcess, Products, Testimonials, WorkTogether } from '../../component'
 
 const Services = () => {
   return (
     <div className='page-right-container'>
       <Products />
+      <MyProcess />
       <Testimonials />
       <Faqs />
       <WorkTogether />

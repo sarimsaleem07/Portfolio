@@ -1,36 +1,13 @@
 import React from 'react'
 import "./ServicesOffered.css"
 import { Col, Container, Row } from 'react-bootstrap'
-import servicesOffered1 from "../../assets/servicesOffered1.svg"
-import servicesOffered2 from "../../assets/servicesOffered2.svg"
-import servicesOffered3 from "../../assets/servicesOffered3.svg"
-import servicesOffered4 from "../../assets/servicesOffered4.svg"
 import { FaArrowRightLong, FaArrowTrendUp } from 'react-icons/fa6'
 import { useNavigate } from 'react-router-dom'
+import { homeServices } from '../../data/portfolioData'
 
 const ServicesOffered = () => {
-
-    const data = [
-        {
-            image: servicesOffered1,
-            title: "UI UX Design"
-        },
-        {
-            image: servicesOffered2,
-            title: "Mobile App"
-        },
-        {
-            image: servicesOffered3,
-            title: "Product Design"
-        },
-        {
-            image: servicesOffered4,
-            title: "Branding"
-        },
-
-    ]
-
     const navigate = useNavigate()
+
     return (
         <div className='services-offered-main'>
             <Container>
@@ -43,11 +20,11 @@ const ServicesOffered = () => {
                                     <a href="" onClick={() => navigate("/services")}>See All Services <FaArrowRightLong /></a>
                                 </div>
                                 <Row className='mt-4'>
-                                    {data.map((item, index) => (
-                                        <Col md={6} lg={3}>
+                                    {homeServices.map((item, index) => (
+                                        <Col md={6} lg={3} key={index}>
                                             <div className="services-offered-item">
                                                 <div className="services-offered-image">
-                                                    <img src={item.image} alt="" />
+                                                    <img src={item.image} alt={item.title} />
                                                 </div>
                                                 <div className="services-offered-text">
                                                     <h3>{item.title}</h3>
@@ -73,8 +50,8 @@ const ServicesOffered = () => {
                         </Col>
                     </Row>
                 </div>
-            </Container >
-        </div >
+            </Container>
+        </div>
     )
 }
 

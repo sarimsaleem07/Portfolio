@@ -12,18 +12,22 @@
     background-color: var(--theme-background);
     border-radius: 8px;
     text-align: center;
+    width: 100%;
 }
 
-.profile-container-image img{
-    width: 261px;
+.profile-container-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
 }
 
-.profile-container-text-parent{
+.profile-container-text-parent {
     margin-block: 24px;
 
 }
 
-.anchor-book{
+.anchor-book {
     text-decoration: none;
 }
 
@@ -60,7 +64,7 @@
     font-weight: 500;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     gap: 10px;
     font-family: "Bricolage Grotesque";
     margin-top: 15px;
@@ -70,37 +74,64 @@
 .profile-container-button .book {
     color: var(--btn-text-color);
     background-color: var(--highlight-color);
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.profile-container-button .book:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35);
 }
 
 .profile-container-button .book a {
     color: var(--btn-text-color);
-
 }
+
 .profile-container-button .copy {
     color: var(--text-color);
     background: transparent;
     border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: border-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 
-.profile-container-button-svg{
+.profile-container-button .copy:hover {
+    border-color: var(--highlight-color);
+    color: var(--highlight-color);
+    transform: translateY(-2px);
+}
+
+.profile-container-button-svg {
     font-size: 20px;
 }
 
 
-.profile-container-icons{
+.profile-container-icons {
     display: flex;
     margin-top: 30px;
     gap: 10px;
 }
 
-.profile-container-icon{
+.profile-container-icon {
     padding: 8px 13px;
     border-radius: 8px;
     background-color: var(--theme-background);
     cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
-.profile-container-icon-svg{
+.profile-container-icon:hover {
+    background-color: var(--highlight-color);
+    transform: translateY(-3px);
+}
+
+.profile-container-icon-svg {
     font-size: 24px;
     color: var(--text-color);
+    transition: color 0.25s ease;
+}
+
+.profile-container-icon:hover .profile-container-icon-svg {
+    color: #fff;
 }
