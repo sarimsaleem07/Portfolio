@@ -32,8 +32,8 @@ import s5 from '../assets/servicesOffered5.webp'
 import s6 from '../assets/servicesOffered6.webp'
 import s7 from '../assets/servicesOffered7.svg'
 import s8 from '../assets/servicesOffered8.svg'
-import profileImg from "../assets/Image.png"
-import resumePdf from "../assets/Sarim'sResume.pdf"
+import profileImg from "../assets/image.png"
+import resumePdf from "../assets/Sarim' s Resume.pdf"
 
 export const profileData = {
   name: 'Sarim Salim',
