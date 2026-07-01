@@ -78,3 +78,23 @@
     transform: translateY(0);
     box-shadow: none;
 }
+
+@media (max-width: 767px) {
+    .form {
+        margin-top: 32px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .contact-data-para {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-container {
+        padding: 32px;
+    }
+}

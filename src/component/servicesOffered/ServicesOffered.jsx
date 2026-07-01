@@ -36,7 +36,7 @@ const ServicesOffered = () => {
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className="services-offered-item-box">
+                            <div className="services-offered-item-box services-offered-work-together-box">
                                 <div className="services-offered-card-title2">
                                     <div className="scrolling-info">
                                         <div className="slider-item">

@@ -249,3 +249,34 @@
     line-height: 1.42em;
     margin-bottom: 0;
 }
+
+@media (max-width: 767px) {
+    .experiance-projects-container {
+        padding: 20px;
+    }
+
+    .expert-area-carts {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: flex-start;
+    }
+
+    .expert-area-cart-container {
+        width: calc(33.333% - 11px);
+    }
+
+    .expert-area-image {
+        padding: 14px 10px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .work-experiance-slider li {
+        flex-wrap: wrap;
+    }
+
+    .date {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}

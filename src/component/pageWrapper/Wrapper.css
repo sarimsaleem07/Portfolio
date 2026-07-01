@@ -25,3 +25,15 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 767px) {
+  .page-right {
+    max-height: none;
+    overflow-y: visible;
+    margin-top: 20px;
+  }
+
+  .page-left {
+    margin-top: 20px;
+  }
+}

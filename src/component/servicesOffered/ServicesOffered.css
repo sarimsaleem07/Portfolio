@@ -159,3 +159,45 @@
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 767px) {
+    .services-offered-main {
+        margin-top: 16px;
+    }
+
+    .services-offered-item-box {
+        padding: 20px;
+    }
+
+    .services-offered-work-together-box {
+        margin-top: 20px;
+    }
+
+    .services-offered-card-title {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .services-offered-card-title h2 {
+        font-size: 20px;
+    }
+
+    .services-offered-item {
+        margin-bottom: 20px;
+    }
+
+    .services-offered-card-title2 h2 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .slider-item p {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-offered-item {
+        margin-bottom: 20px;
+    }
+}

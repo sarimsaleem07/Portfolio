@@ -1,5 +1,6 @@
 .intro-container {
-  height: 90vh;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,14 +8,21 @@
   color: #fff;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 16px;
+  text-align: center;
 }
 
 .intro-name {
-  font-size: 4rem;
+  font-size: clamp(1.75rem, 9vw, 4rem);
   font-weight: 800;
-  letter-spacing: 5px;
+  letter-spacing: clamp(1px, 0.8vw, 5px);
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(2px, 1.5vw, 8px);
+  margin: 0;
+  max-width: 100%;
 }
 
 .intro-name span {

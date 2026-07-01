@@ -100,3 +100,27 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 767px) {
+  .faqs-wrapper {
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .faqs-item {
+    padding: 16px;
+  }
+
+  .faqs-title {
+    font-size: 18px;
+    padding-right: 26px;
+  }
+
+  .faqs-description-inner {
+    font-size: 15px;
+  }
+}

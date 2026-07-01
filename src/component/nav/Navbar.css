@@ -211,3 +211,27 @@
     color: var(--highlight-color);
     transform: rotate(90deg);
 }
+
+@media (max-width: 480px) {
+    .ant-drawer-content-wrapper {
+        width: 82% !important;
+    }
+
+    .navbar-sub-parent {
+        padding: 10px 10px 10px 16px;
+    }
+
+    .navbar-logo h1 {
+        font-size: 28px;
+    }
+
+    .hamburger {
+        margin-left: 14px;
+        font-size: 24px;
+    }
+
+    .nav-theme-btn .theme-svg-sun,
+    .nav-theme-btn .theme-svg-moon {
+        font-size: 22px;
+    }
+}
