@@ -184,20 +184,17 @@
     /* space for the close icon */
 }
 
-:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-header {
-    background-color: var(--theme-background);
+.ant-drawer .ant-drawer-header {
+    background-color: var(--black);
+    border-color: rgba(128, 128, 128, 0.2);
 }
 
-:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-body {
-    background-color: var(--theme-background);
+.ant-drawer .ant-drawer-body {
+    background-color: var(--black);
     color: var(--white);
 }
 
-/* :where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-close{
-    display: none;
-} */
-
-:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-close {
+.ant-drawer .ant-drawer-close {
     position: absolute;
     top: 18px;
     right: 20px;
@@ -207,7 +204,7 @@
     transition: all 0.3s ease;
 }
 
-:where(.css-dev-only-do-not-override-1m2bkf9).ant-drawer .ant-drawer-close:hover {
+.ant-drawer .ant-drawer-close:hover {
     color: var(--highlight-color);
     transform: rotate(90deg);
 }

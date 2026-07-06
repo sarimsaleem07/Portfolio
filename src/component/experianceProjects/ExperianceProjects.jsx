@@ -16,12 +16,12 @@ const ExperianceProjects = () => {
         <div className="experiance-projects">
             <Container>
                 <Row>
-                    <Col md={4}>
+                    <Col lg={4}>
                         <div className="page-left">
                             <Profile />
                         </div>
                     </Col>
-                    <Col md={4}>
+                    <Col lg={4}>
                         <div className="" style={{ marginTop: "24px" }}>
                             <div className="experiance-projects-container">
                                 <h2>Work Experience</h2>
@@ -68,7 +68,7 @@ const ExperianceProjects = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={4}>
+                    <Col lg={4}>
                         <div className="experiance-projects-container" style={{ marginTop: "24px" }}>
                             <div className="recent-projects-text">
                                 <h2>Recent Projects</h2>
