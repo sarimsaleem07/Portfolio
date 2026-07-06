@@ -14,6 +14,7 @@ import { useState } from 'react';
 import IntroAnimation from './pages/introAnimation/IntroAnimation';
 import NotFound from './pages/notFound/NotFound';
 import "./utils/Media.css"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -32,6 +33,7 @@ function App() {
         <Route path='*' element={<Wrapper><NotFound /></Wrapper>} />
       </Routes>
       {!hideNavbarAndFooter && <Footer />}
+      <Analytics />
     </div>
   );
 }
